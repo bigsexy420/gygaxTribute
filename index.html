@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title id="title">A Tribute to Gary Gygax</title>
+    <title>A Tribute to Gary Gygax</title>
 </head>
 <html>
     <style type="text/css">
@@ -13,35 +13,86 @@
             src: url(fonts/texgyrebonum-regular.otf);
         }
         @font-face {
+            font-family: texgyrebonum-italic;
+            src: url(fonts/texgyrebonum-italic.otf);
+        }
+        @font-face {
             font-family: junction-bold;
             src: url(fonts/Junction-bold.otf);
         }
         @font-face {
-            font-family: texgyrebonum-italic;
-            src: url(fonts/texgyrebonum-italic.otf);
+            font-family:junction-regular;
+            src: url(fonts/Junction-regular.otf)
+        }
+        .responsive-img{
+            max-width: 100%;
+            height: auto;
+        }
+        header {
+            display: flex;
+            justify-items: center;
+        }
+        footer {
+            display:flex;
+            justify-content: center;
         }
         h1 {
             font-family: andadasc-bold;
+            font-size: 5em;
+            position:relative;
+            margin:auto;
         }
         h2 {
             font-family: junction-bold;
+            font-size:2em;
+            position: relative;
+            margin:auto;
+        }
+        img {
+            width: 550px;
+            display: block;
+        }
+        p {
+            text-align:justify;
         }
         #img-div {
-
+            position: relative;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         #img-caption {
             font-family: texgyrebonum-italic;
             font-size: 70%;
+            display: flex;
             position: relative;
-            bottom: 12px;
+            bottom: 10px;
+        }
+        #tribute-info {
+            font-family:junction-regular;
+            width: 50vw;
+            position: relative;
+            margin:auto; 
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-items: center;
+        }
+        #credits {
+            font-size: 70%;
+            position: relative;
+            margin-left: auto;
+            margin-top: auto;
         }
     </style>
     <header>
-        <h1>A Tribute to Gary Gygax</h1>
+        <h1 id="title">A Tribute to Gary Gygax</h1>
     </header>
     <main id="main">
         <div id="img-div">
-            <img id="image" src="images/gary-gygax.jpg" alt="Headshot of Gary Gygax">
+            <img id="image" src="images/gary-gygax.jpg" alt="Headshot of Gary Gygax" class="responsive-img">
             <p id="img-caption" for="image">Gary Gygax: Creator of Dungeons and Dragons. 1938-2008</p>
         </div>
         <div id="tribute-info">
@@ -71,6 +122,6 @@
         </div>
     </main>
     <footer>
-        <p>To read more about Gary Gygax visit his <a href="https://en.wikipedia.org/wiki/Gary_Gygax" id="tribute-link" target="_blank">wikipedia</a></p>
+        <p id="refrence">To read more about Gary Gygax visit his <a href="https://en.wikipedia.org/wiki/Gary_Gygax" id="tribute-link" target="_blank">wikipedia</a></p>
     </footer>
 </html>
